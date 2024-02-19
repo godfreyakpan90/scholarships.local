@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<title>KPhA</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0, width=device-width">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Le styles -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/flexslider.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="slick/slick.css">
+    	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+        <link href="css/smstyle.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+			<link rel="icon" href="images/theme/favicon/favicon-32.png" sizes="32x32">
+			<link rel="icon" href="images/theme/favicon/favicon-57.png" sizes="57x57">
+			<link rel="icon" href="images/theme/favicon/favicon-76.png" sizes="76x76">
+			<link rel="icon" href="images/theme/favicon/favicon-96.png" sizes="96x96">
+			<link rel="icon" href="images/theme/favicon/favicon-128.png" sizes="128x128">
+			<link rel="icon" href="images/theme/favicon/favicon-192.png" sizes="192x192">
+
+        <script src="js/modernizr.custom.js"></script>
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<!--[if  IE 8]>
+		<style>
+		.navbar .main-menu ul li:hover ul {
+		display: block;
+		}
+
+		</style>
+		<![endif]-->
+        
+	<meta name="referrer" content="no-referrer-when-downgrade">
+	<script id="naylor-privacy-script"
+		data-org-name=""
+		data-mode="passive"
+		data-policy-url="/cookiepolicy.asp"
+		type="text/javascript" src="https://cdn.naylor.com/end-user-privacy/index.js">
+	</script>	
+	<script type="text/javascript">		
+		window.onload = function(){
+			var privacybanner = document.getElementsByClassName("naylor-privacy-banner");
+			var i;		
+			for (i = 0; i < privacybanner.length; i++) {			
+				privacybanner[i].classList.add("naylor-privacy-banner-hide-print");
+			}
+		};			
+	</script>
+
+    <!-- Alter search form to track search keywords in Google Analytics -->
+    <script>
+        function runSearchDomChanges() {
+            $('form').each(function() {
+                var formEl = $(this);
+                var formActionText = formEl.attr('action');
+                if(formActionText.substring(0, 10) == "search.asp" || formActionText.substring(0, 11) == "/search.asp") {
+                    formEl.attr('method','GET');
+                    $(formEl.find(":input[name='search']")).attr('name','keywords');
+                    $(formEl.find(":button[name='keywords']")).attr('name','search');
+
+                    if($(formEl.find(":input[name='type']")).length === 0) { 
+                        formEl.append('<input type="hidden" name="type" value="basic">');
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function load() {
+            if (!window.jQuery) return setTimeout(load, 50);
+                runSearchDomChanges();
+        }, false);
+
+    </script>
+
+	
+	<style type="text/css">
+		@media print {
+			.naylor-privacy-banner-hide-print  { display: none !important; }
+			a[href]:after {
+				content: "" !important;
+			}
+		}
+	</style>
+	
+    <!-- Google Analytics Code Begin -->
+	 <script type="text/javascript">    
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || [
+            ]).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o) [0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    }) (window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'gaTimberlake');
+	</script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-884886BQF9">
+	</script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+		if(window.naylorPrivacy){
+			if(window.naylorPrivacy.shouldLoad("Performance")){    
+				gtag('config', 'G-884886BQF9');
+				gtag('config', 'UA-130951543-1');
+				addTimberlakeTracker();
+				addClientTracking();
+			}
+		} else {
+			gtag('config', 'G-884886BQF9');
+			gtag('config', 'UA-130951543-1');
+			addTimberlakeTracker();
+            addClientTracking();
+		}
+    
+	function addTimberlakeTracker () {
+		gaTimberlake('create', 'G-884886BQF9', 'auto', 'TimberlakeTracker');
+    	gaTimberlake('set', 'anonymizeIp', true);
+    	// gaTimberlake('TimberlakeTracker.send', 'pageview');
+	}
+
+    function addClientTracking(){
+        gaTimberlake('create', 'UA-130951543-1', 'auto', 'ClientTracker0');
+
+    }
+    
+    function analyticsLinkTracking (a) {
+        gaTimberlake('TimberlakeTracker.send', 'event', a.target.href, 'click', a.target.href);
+        if(window.naylorPrivacy.shouldLoad("Performance")){    
+        gaTimberlake('ClientTracker0.send', 'event', a.target.href, 'click', a.target.href);
+
+        }            
+    }
+    </script>
+    <!-- Google Analytics Code End -->
+<!-- Custom Head Region Code Begin -->
+<style>section.interior h2 {
+    font-size: 24px;
+  padding-bottom: 0px; 
+    margin-bottom: 15px;
+}
+a.btn:hover {
+    background: #004d40;
+    text-decoration: none;
+    opacity: 1;
+    color: #fff;
+font-weight:400;
+}
+
+.subpage-menu a {
+    color: #004d40;
+    text-decoration: none;
+    font-size: 16px;
+font-weight:400;
+}
+.subpage-menu a:hover {
+    color: #9b7605;
+font-weight:400;
+}
+</style>
+<!-- Custom Head Region Code End -->
+
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-sm-3 col-md-3">
+	                	<div class="logo">
+	                	 <a href="/"><img src="images/theme/logo.png" class="img-responsive" alt="logo"></a>
+	                	</div>
+	              	</div><!-- end col-md-2 -->
+	              	<div class="col-sm-9 col-md-9">
+	              		<div class="top-contain">
+		              		<div class="top-links"><span style="font-size:12px;"><a href="https://www.kphanet.org/content.asp?contentid=159"><input name="CE" type="button" value="CE" /></a><a href="https://www.kphanet.org/membership"><input name="Join" type="button" value="Join" /></a>&nbsp;<a href="https://www.kphanet.org/AF_Membership.asp"><input name="Renew" type="button" value="Renew" /></a>&nbsp;</span></div>
+		              		<div class="member-login"><div class="login-btn">
+	<button type="button" class="btn-user" data-toggle="modal" data-target="#myModal">Login </button> 
+
+		<!--Modal-Member-login-->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+			<!--Modal-content-->    
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div><!--modal-header-ends-->  
+				<div class="modal-body">
+					<div class="member-box">
+						<h3>Member Login</h3>
+						<form class="login" action='https://secure.membershipsoftware.org/kphasecure//login.asp' id='login' method='post'>
+						  <fieldset>
+								  
+									<input type="text" class="txt-user" id="username" name="username" placeholder="Username">
+									<input type="password" class="txt-pass" id="password" name="password" placeholder="Password">
+									 <button type="submit" class="btn enter_button">Login</button>
+							  <span class="forgot"><a href="/assoc_forgot.asp">Forgot your Password?</a><br>
+							  	<a href="/assoc_subscribe.asp">Not a member? Register Here</a></span>
+						  </fieldset>
+						</form>
+					</div>
+
+				</div><!--modal-body-ends-->
+			</div><!--modal-content-ends-->
+		</div><!--modal-dialog-ends-->
+	</div><!--modal-ends--> 
+</div><!--login-btn-ends-->
+
+
+
+
+</div>
+							<div class="search">
+	               				<div class="icons">
+	      							<div class="search-icon">
+	      								<a href="#search">
+	      								Search
+	      								</a><!--end search-->	
+									</div><!--end search-icon-->	    
+									<div id="searchbar" class="clearfix">
+										<form class="searchform" action="search.asp?type=basic" method="post">
+										<input type="hidden" name="type" value="basic">
+	                                	<input class="search-field input-medium search-query" name="search" type="text" placeholder="Search this site...">
+										<button class="btn search-btn" type="submit" name="search"><i class="fa fa-search"></i></button>
+										</form>
+									</div><!--end searchbar-->	
+								</div><!--end icons-->	
+	               			</div><!--end search-->
+	              		</div><!--top-contain-ends-->
+						<div class="clear"></div>
+						<div class="navbar-wrapper">
+							
+                <div class="navbar navbar-static-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span> 
+                                <span class="icon-bar"></span> 
+                                <span class="icon-bar"> </span> 
+                            </button>
+                        </div>    
+                             <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">  
+        
+        
+            <li class="dropdown">
+
+
+                <a class="dropdown-toggle" href="membership" target="_self">
+                    Membership
+                    <!--<span class="caret"></span>-->
+                </a>
+                    <ul class="dropdown-menu">
+                    
+                      
+                      
+                                <li>
+                <a href="why be a member" target="_self">
+                    Why Be a Member?
+                </a>
+                                </li>
+                                <li>
+                <a href="who we are" target="_self">
+                    Who We Are
+                </a>
+                                </li>
+                                <li>
+                <a href="protect and defend" target="_self">
+                    We Protect Pharmacists & Defend the Profession
+                </a>
+                                </li>
+                                <li>
+                <a href="messagefromthepresident" target="_self">
+                    President's Perspective
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=266" target="_self">
+                    The Kentucky Pharmacist Journal
+                </a>
+                                </li>
+                                <li>
+                <a href="kphaawards" target="_self">
+                    KPhA Awards
+                </a>
+                                </li>
+                                <li>
+                <a href="professionalacademies" target="_self">
+                    Professional Academies
+                </a>
+                                </li>
+                    
+                </ul>
+            </li>
+            <li class="dropdown">
+
+
+                <a class="dropdown-toggle" href="about" target="_self">
+                    About KPhA
+                    <!--<span class="caret"></span>-->
+                </a>
+                    <ul class="dropdown-menu">
+                    
+                      
+                      
+                                <li>
+                <a href="missionhistory" target="_self">
+                    Mission & History
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=312" target="_self">
+                    Nominate a KY Pharmacist for the 2024 KPhA Board
+                </a>
+                                </li>
+                                <li>
+                <a href="kphaboardofdirectors" target="_self">
+                    KPhA Board of Directors
+                </a>
+                                </li>
+                                <li>
+                <a href="kphacommittees" target="_self">
+                    KPhA Committees
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=142" target="_self">
+                    Staff
+                </a>
+                                </li>
+                                <li>
+                <a href="contactus" target="_self">
+                    Contact Us
+                </a>
+                                </li>
+                                <li>
+                <a href="sponsor" target="_self">
+                    Sponsorship
+                </a>
+                                </li>
+                    
+                </ul>
+            </li>
+            <li class="dropdown">
+
+
+                <a class="dropdown-toggle" href="education" target="_self">
+                    The Foundation
+                    <!--<span class="caret"></span>-->
+                </a>
+                    <ul class="dropdown-menu">
+                    
+                      
+                      
+                                <li>
+                <a href="kperf" target="_self">
+                    KPERF Board of Directors
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=159" target="_self">
+                    Continuing Education
+                </a>
+                                </li>
+                                <li>
+                <a href="opioids" target="_self">
+                    Opioid Related CE
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=249" target="_self">
+                    CPE Activity Form
+                </a>
+                                </li>
+                                <li>
+                <a href="kore" target="_self">
+                    Kentucky Opioid Response Effort (KORE)
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=300" target="_self">
+                    Opioid & Overdose Resources
+                </a>
+                                </li>
+                                <li>
+                <a href="incentivegrant2023" target="_self">
+                    2023 Incentive Grant Program
+                </a>
+                                </li>
+                                <li>
+                <a href="fellowship" target="_self">
+                    Executive Fellowship
+                </a>
+                                </li>
+                                <li>
+                <a href="techimmtrain" target="_self">
+                    Pharmacy Technician Immunization Administration Training
+                </a>
+                                </li>
+                    
+                </ul>
+            </li>
+            <li class="dropdown">
+
+
+                <a class="dropdown-toggle" href="advocacy" target="_self">
+                    Advocacy
+                    <!--<span class="caret"></span>-->
+                </a>
+                    <ul class="dropdown-menu">
+                    
+                      
+                      
+                                <li>
+                <a href="24priorities" target="_self">
+                    2024 Legislative Priorities
+                </a>
+                                </li>
+                                <li>
+                <a href="kphagovernmentaffairs" target="_self">
+                    KPhA Government Affairs
+                </a>
+                                </li>
+                                <li>
+                <a href="kphaadvocacyactioncenter" target="_self">
+                    KPhA Advocacy Action Center
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=169" target="_self">
+                    Political Advocacy Council
+                </a>
+                                </li>
+                                <li>
+                <a href="2023 legislative summary" target="_self">
+                    2023 Legislative Summary
+                </a>
+                                </li>
+                    
+                </ul>
+            </li>
+            <li class="dropdown">
+
+
+                <a class="dropdown-toggle" href="content.asp?contentid=253" target="_self">
+                    Events
+                    <!--<span class="caret"></span>-->
+                </a>
+                    <ul class="dropdown-menu">
+                    
+                      
+                      
+                                <li>
+                <a href="ky_pharmacy_day_at_the_capitol_2024" target="_self">
+                    KY Pharmacy Day at the Capitol
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=307" target="_self">
+                    2024 Annual Meeting Sponsor & Exhibitor Information
+                </a>
+                                </li>
+                                <li>
+                <a href="annualmeeting2024" target="_self">
+                    2024 Annual Meeting: It's Our Time to Thrive
+                </a>
+                                </li>
+                                <li>
+                <a href="https://www.kphanet.org/calendar_list.asp" target="_self">
+                    KPhA Event Calendar
+                </a>
+                                </li>
+                    
+                </ul>
+            </li>
+            <li class="dropdown">
+
+
+                <a class="dropdown-toggle" href="resources" target="_self">
+                    Resources
+                    <!--<span class="caret"></span>-->
+                </a>
+                    <ul class="dropdown-menu">
+                    
+                      
+                      
+                                <li>
+                <a href="https://kpha.membershipsoftware.org/resources.asp" target="_self">
+                    Resource Center
+                </a>
+                                </li>
+                                <li>
+                <a href="board authorized protocols" target="_self">
+                    Board Authorized Protocols
+                </a>
+                                </li>
+                                <li>
+                <a href="pharmacy technicians" target="_self">
+                    Pharmacy Technicians
+                </a>
+                                </li>
+                                <li>
+                <a href="https://kpha.membershipsoftware.org/store_home.asp" target="_self">
+                    e-Store
+                </a>
+                                </li>
+                                <li>
+                <a href="https://kypharmacistsassociation.itemorder.com/shop/sale/" target="_blank">
+                    Apparel Store
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=317" target="_self">
+                    Medical Billing Workshop
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=181" target="_self">
+                    Harm Reduction
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=182" target="_self">
+                    COVID-19
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=197" target="_self">
+                    Relief Pharmacists
+                </a>
+                                </li>
+                                <li>
+                <a href="agencynaloxone" target="_self">
+                    Naloxone Requests for Kentucky Agencies
+                </a>
+                                </li>
+                                <li>
+                <a href="copay" target="_self">
+                    Kentucky Naloxone Copay Program
+                </a>
+                                </li>
+                                <li>
+                <a href="narcan" target="_self">
+                    Naloxone for Law Enforcement
+                </a>
+                                </li>
+                                <li>
+                <a href="frcara" target="_self">
+                    Naloxone Request - FR-CARA
+                </a>
+                                </li>
+                                <li>
+                <a href="content.asp?contentid=210" target="_self">
+                    KY Rx Podcast
+                </a>
+                                </li>
+                                <li>
+                <a href="vaccination resources" target="_self">
+                    Vaccination Resources
+                </a>
+                                </li>
+                                <li>
+                <a href="https://jobs.kphanet.org/" target="_blank">
+                    Career Center
+                </a>
+                                </li>
+                                <li>
+                <a href="syringe" target="_self">
+                    Syringe Education
+                </a>
+                                </li>
+                    
+                </ul>
+            </li>
+        
+                    </ul>
+                                            </div><!--navbar-collapse-ends-->
+                                                
+                                        </div>
+                                    </div>
+						</div>
+	              	</div><!--end of col-9-->	
+	            </div><!--end of row-->
+	        </div><!--end of wrapper-->  		
+		</header>
+	    <div class="clear"></div>
+		<section class="slide"><!--slider-section-->
+			<div class="slider-area">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">					
+						<div class="slider-bg">	
+		                            <div class="flexslider">
+			<ul class="flexslider slides">
+                <li><a href="https://www.kphanet.org/ky_pharmacy_day_at_the_capitol_2024" target="_blank"><div class="parallax " style="background-image:url('slider/txo0Red55LsNVrh.jpg')"><!--<img src="images/space.png" />--></div></a>
+                
+                </li>
+             
+                <li><a href="https://www.kphanet.org/kphaadvocacyactioncenter" ><div class="parallax " style="background-image:url('slider/j4Eq276gg02dl28.jpg')"><!--<img src="images/space.png" />--></div></a>
+                
+                </li>
+             
+                <li><a href="https://www.kphanet.org/store_category.asp?id=1" ><div class="parallax " style="background-image:url('slider/tXOa61Dqp4Rn7RH.jpg')"><!--<img src="images/space.png" />--></div></a>
+                
+                </li>
+             
+                <li><a href="https://www.kphanet.org/annualmeeting2024" ><div class="parallax " style="background-image:url('slider/k52Riv7HHc3Fm38.jpg')"><!--<img src="images/space.png" />--></div></a>
+                
+                </li>
+             
+                <li><a href="https://www.kphanet.org/content.asp?contentid=317" ><div class="parallax " style="background-image:url('slider/eIYl15Ocb7DygD6.jpg')"><!--<img src="images/space.png" />--></div></a>
+                
+                </li>
+                    	</ul> 
+        </div>
+
+		                </div><!--slider-bg-ends-->    				
+					</div><!--col-12-ends-->		
+		  		</div><!--row-ends-->	
+		  	</div><!--/slider-area-ends-->
+	    </section><!--end of slider-section--> 
+		<div class="clear"></div>                                  
+	    <section class="main">
+	  		<div class="wrapper">	
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="text-content">
+							
+						</div>
+						<!-- end spotlight-container -->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="spotlight-container tapbox">
+							<div class="overlay">&nbsp;</div>
+<!-- end overlay --><a href="https://jobs.kphanet.org/"><img alt="" src="images/theme/Career_Center_Website_pic.jpg" /></a>
+
+<div class="spotlight-content">
+<div class="spotlight-content-wrap">
+<h2><a href="https://jobs.kphanet.org/">Career Center</a></h2>
+</div>
+<!-- end spotlight-content-wrap --></div>
+<!-- end spotlight-content -->
+						</div>
+						<!-- end spotlight-container -->
+					</div>
+					<!-- end col-md-3 -->
+					<div class="col-md-3 col-sm-6">
+						<div class="spotlight-container tapbox">
+							<div class="overlay">&nbsp;</div>
+<!-- end overlay --><a href="https://www.kphanet.org/content.asp?contentid=266"><img alt="" src="images/theme/Access_Your_Free_Membership_CE_website_pic.jpg" /></a>
+
+<div class="spotlight-content">
+<div class="spotlight-content-wrap">
+<h2><a href="https://www.kphanet.org/content.asp?contentid=266">Submit CE Credits</a></h2>
+</div>
+<!-- end spotlight-content-wrap --></div>
+<!-- end spotlight-content -->
+						</div>
+						<!-- end spotlight-container -->
+					</div>
+					<!-- end col-md-3 -->
+					<div class="col-md-3 col-sm-6">
+						<div class="spotlight-container tapbox">
+							<div class="overlay">&nbsp;</div>
+<!-- end overlay --><a href="https://www.kphanet.org/membership"><img alt="" src="images/theme/Connnect_with_Community.jpg" /></a>
+
+<div class="spotlight-content">
+<div class="spotlight-content-wrap">
+<h2><a href="https://www.kphanet.org/membership">Join Now</a></h2>
+</div>
+<!-- end spotlight-content-wrap --></div>
+<!-- end spotlight-content -->
+						</div>
+						<!-- end spotlight-container -->
+					</div>
+					<!-- end col-md-3 -->
+					<div class="col-md-3 col-sm-6">
+						<div class="spotlight-container tapbox">
+							<div class="overlay">&nbsp;</div>
+<!-- end overlay --><a href="https://www.kphanet.org/kphaadvocacyactioncenter"><img alt="" src="images/theme/Advocate_Website_pic.JPG" /></a>
+
+<div class="spotlight-content">
+<div class="spotlight-content-wrap">
+<h2><a href="https://www.kphanet.org/kphaadvocacyactioncenter" target="_blank">Advocacy Action Center</a></h2>
+</div>
+<!-- end spotlight-content-wrap --></div>
+<!-- end spotlight-content -->
+						</div>
+						<!-- end spotlight-container -->
+					</div>
+					<!-- end col-md-3 -->
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="ad-banner">
+							
+						</div>
+					</div><!--end of col-md-12-->
+				</div><!--end row-->
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="events-wrap">
+			  				<h2>Upcoming Events</h2>
+
+	<div class=events>
+		<ul>
+			
+						<li class=latest_event>
+						
+						<div class=event_date>
+							<div class=day>22</div>
+							<div class=month>Feb</div>
+						</div>
+						<div class=event_content>
+							<h5><a href="ev_calendar_day.asp?date=2%2F22%2F24&eventid=247">Pharmacy Day at the Capitol</a></h5>
+							<p>
+								8:00 AM to 5:00 PM EST								
+							</p>
+						</div>
+					</li>
+					
+						<li>
+						
+						<div class=event_date>
+							<div class=day>22</div>
+							<div class=month>Feb</div>
+						</div>
+						<div class=event_content>
+							<h5><a href="ev_calendar_day.asp?date=2%2F22%2F24&eventid=235">KPhA Board Meeting</a></h5>
+							<p>
+								2:00 PM to 4:00 PM EST								
+							</p>
+						</div>
+					</li>
+					
+						<li>
+						
+						<div class=event_date>
+							<div class=day>28</div>
+							<div class=month>Feb</div>
+						</div>
+						<div class=event_content>
+							<h5><a href="ev_calendar_day.asp?date=2%2F28%2F24&eventid=254">Medical Billing Success Call</a></h5>
+							<p>
+								7:00 PM to 8:00 PM EST								
+							</p>
+						</div>
+					</li>
+					
+						<li>
+						
+						<div class=event_date>
+							<div class=day>3</div>
+							<div class=month>Apr</div>
+						</div>
+						<div class=event_content>
+							<h5><a href="ev_calendar_day.asp?date=4%2F3%2F24&eventid=266">Pharmacy Technical Advisory Committee (TAC)</a></h5>
+							<p>
+								1:00 PM to 3:00 PM EDT								
+							</p>
+						</div>
+					</li>
+					
+						<li>
+						
+						<div class=event_date>
+							<div class=day>12</div>
+							<div class=month>Apr</div>
+						</div>
+						<div class=event_content>
+							<h5><a href="ev_calendar_day.asp?date=4%2F12%2F24&eventid=260">KPERF Board Meeting</a></h5>
+							<p>
+								9:00 AM to 11:00 AM EDT								
+							</p>
+						</div>
+					</li>
+					
+		</ul>
+	</div>
+	
+							<span class="view-more"><a class="btn" href="/calendar_list.asp">View All Events</a></span>
+						</div>
+					</div><!--end of col-md-8-->
+					<div class="col-md-6 col-sm-6">
+						<div class="headlines-wrap">
+							<h2>Headlines</h2>
+<ul class="news-list">  <li>
+   <h4 class="section-heading"><a href="https://www.kphanet.org/blog_home.asp?Display=120">Drug Supply Chain Security Act:  Join APhA's letter to the FDA</a></h4>
+   <ul class="meta">
+     <li>Tuesday, February 13, 2024</li>
+   </ul>
+   <p>APhA's Government Affairs team needs your feedback on their survey about the Drug Supply Chain Security Act (DSCSA) implementation at your pharmacy. FDA is interested in better understanding the status of the supply chain's progress in implementing the DSCSA requirements that went into effect on November 27, 2023.
+
+&nbsp;
+</p>
+   <a class="read-more" href="https://www.kphanet.org/blog_home.asp?Display=120">Read More</a>
+ </li>
+  <li>
+   <h4 class="section-heading"><a href="https://www.kphanet.org/blog_home.asp?Display=122">PBM Reform Legislation Filed in the State Senate</a></h4>
+   <ul class="meta">
+     <li>Thursday, February 8, 2024</li>
+   </ul>
+   <p>
+&nbsp;
+</p>
+   <a class="read-more" href="https://www.kphanet.org/blog_home.asp?Display=122">Read More</a>
+ </li>
+  <li>
+   <h4 class="section-heading"><a href="https://www.kphanet.org/blog_home.asp?Display=119">Board of Pharmacy Requests KPhA Member Feedback</a></h4>
+   <ul class="meta">
+     <li>Monday, February 5, 2024</li>
+   </ul>
+   <p>The Kentucky Board of Pharmacy has requested that KPhA collect feedback regarding the potential impacts of&nbsp;proposed changes to 201 KAR 2:070. 201 KAR 2:070 regulates prescription intermediary services and recently went through the regulation review process as it was due to sunset this year. Please take a moment to review the changes and share any feedback on how the proposed changes would affect your pharmacy&nbsp;operations. Just to remind you, the proposed changes are in&nbsp;bold and underlined&nbsp;text. The remaining text has been in effect previously. If you have feedback, please email those comments directly to KPhA's&nbsp;Executive Director, Ben Mudd.</p>
+   <a class="read-more" href="https://www.kphanet.org/blog_home.asp?Display=119">Read More</a>
+ </li>
+</ul>
+							<span class="view-more"><a class="btn" href="/blog_home.asp">View All News</a></span>
+							<div class="clear"></div>
+						</div><!--end of headlines-wrap-->
+					</div><!--end of col-md-4-->
+				</div><!--end row-->
+		  		<div class="clear"></div>
+		  		<div class="row">
+		  			<div class="col-md-12">
+			  			<div class="sponsor">
+			  				<h2>Our Sponsors</h2>
+
+  <div class="sponsor-logo">
+    <ul class="slide-logo">
+      
+  <li><a href="https://www.cipky.com/kpha-osma-health-plan" target="_blank"><img src="sponsors/CIP Logo.jpg" alt="Commonwealth Insurance Partners" /></a></li>
+  
+  <li><a href="https://www.cipky.com/kpha-osma-health-plan" target="_blank"><img src="sponsors/OSMA logo.jpg" alt="Oklahoma State Medical Association" /></a></li>
+  
+  <li><a href="https://www.phmic.com/" target="_blank"><img src="sponsors/UPDATED_PMC_logowtagline_RGB.jpg" alt="Pharmacists Mutual " /></a></li>
+  
+  <li><a href="https://www.apscnet.com/" target="_blank"><img src="sponsors/UPDATED_apsc_logo (1).jpg" alt="American Pharmacy Services Corporation" /></a></li>
+  
+  <li><a href="https://www.ptcb.org/" target="_blank"><img src="sponsors/pharmacy_technician_certification_board_logo.jpg" alt="Pharmacy Technician Certification Board" /></a></li>
+  
+  <li><a href="https://www.medicationsafety.org/" target="_blank"><img src="sponsors/UPDATED_APMS.jpg" alt="Alliance for Patient Medication Safety" /></a></li>
+  
+  <li><a href="https://blog.prescribewellness.com/mds-pharmacy-association/" target="_blank"><img src="sponsors/PerscribeWellness_TRHCSolution_Black (1).jpg" alt="Tabula Rasa HealthCare Solution" /></a></li>
+  
+  <li><a href="https://www.sofi.com/" target="_blank"><img src="sponsors/1.jpg" alt="SoFi" /></a></li>
+  
+  <li><a href="https://www.sunrx.com/" target="_blank"><img src="sponsors/sunrx.jpg" alt="SunRx" /></a></li>
+  
+  <li><a href="https://www.sullivan.edu/colleges/college-of-pharmacy-and-health-sciences" target="_blank"><img src="sponsors/download (2).jpg" alt="Sullivan College of Pharmacy " /></a></li>
+  
+  <li><a href="https://pharmacy.uky.edu/" target="_blank"><img src="sponsors/College_of_Pharmacy-black.jpg" alt="University of Kentucky College of Pharmacy" /></a></li>
+  
+    </ul>
+  </div>
+  
+			  			</div>
+			  		</div><!--end of col-md-12-->
+		  		</div><!--end row-->			
+		  	</div><!--end of wrapper-->                 
+	    </section> 
+		<footer>
+	        <div class="footer-top">
+				<div class="wrapper">
+					<div class="row">
+		  				<div class="col-sm-6 col-md-6">
+		  					<div class="footerAddress">
+		  						Kentucky Pharmacists Association<br />
+96 C. Michael Davenport Blvd. Frankfort, KY 40601<br />
+502.227.2303<br />
+<a href="mailto:info@kphanet.org" target="_blank">info@kphanet.org</a>
+		  					</div>
+		  				</div><!--end of col-md-4-->
+		  				<div class="col-sm-6 col-md-6">
+		  					<div class="footerSocial">
+		  						<ul>
+	<li><a href="https://www.facebook.com/KyPharmAssoc/" target="_blank"><span aria-hidden="true" class="fa fa-facebook"></span></a></li>
+	<li><a href="https://twitter.com/kypharmassoc?lang=en" target="_blank"><span aria-hidden="true" class="fa fa-twitter"></span></a></li>
+	<li><a href="https://www.linkedin.com/company/kentucky-pharmacists-association" target="_blank"><span aria-hidden="true" class="fa fa-linkedin"></span></a></li>
+	<li><a href="https://www.instagram.com/kypharmacists/" target="_blank"><span aria-hidden="true" class="fa fa-instagram"></span></a></li>
+</ul>
+
+		  					</div>
+		  					<div itemscope="" itemtype="https://schema.org/WebSite">
+		                        <span itemprop="provider" itemscope="" itemtype="https://schema.org/Organization">
+		                           	<div class="footer-logo"><span itemprop="name">Naylor Association Management Software</span></div>
+		                        </span>
+		                    </div>
+		  				</div><!--end of col-md-4-->
+		  			</div><!--end of row-->	
+				</div><!--end of wrapper-->
+			</div><!--end of footer-top-->
+	        <div class="footer-bottom">
+	        	<div class="wrapper">
+					<div class="row">
+		  				<div class="col-md-12">
+		  					<div class="copy">Copyright&nbsp;&copy;&nbsp;2024, Kentucky Pharmacists Association</div>
+		  				</div><!--end of col-md-12-->
+		  			</div><!--end of row-->	
+				</div><!--end of wrapper-->
+	        </div><!--end of footer-bottom-->     	
+		</footer>
+	</div><!--container-->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider.js"></script><!--flexslider 1.8 -->
+<script src="js/bootstrap-hover-dropdown.min.js"></script>
+<script src="js/doubletaptogo.min.js"></script>
+<script src="js/search-popbox.js"></script>
+<script src="slick/slick.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    	$('.flexslider').flexslider();
+        $('.dropdown-toggle').dropdownHover();
+        $('ul.nav li:has(ul)').doubleTapToGo();
+ 
+         $('.slide-logo').slick({
+             infinite: true,
+             autoplay: true,
+             autoplaySpeed: 2000,
+             arrows: false,
+             slidesToShow: 4,
+             slidesToScroll: 1,
+             dots: false,
+             responsive: [
+             {
+               breakpoint: 980,
+               settings: {
+                 slidesToShow: 2,
+                 slidesToScroll: 1
+               }
+             },
+             {
+               breakpoint: 640,
+               settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1
+               }
+             }
+
+            ]
+     });
+  });
+</script>  
+
+<script type="text/javascript">
+	(function($) {
+		$(function() {
+			var theDiv = $(".tapbox");
+			theDiv.click(function(){
+			window.location=$(this).find("a").attr("href"); 
+			return false;
+		});	
+	});
+
+	})(jQuery);
+</script>     
+
+</body>
+</html>
