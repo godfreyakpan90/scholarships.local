@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Oxford University &#8211; ApplyJobs</title>
+	<atom:link href="https://applyjobs.org.ng/tag/oxford-university/feed/" rel="self" type="application/rss+xml" />
+	<link>https://applyjobs.org.ng</link>
+	<description>Scholarships, Jobs and Information Hub</description>
+	<lastBuildDate>Sat, 30 Mar 2024 17:22:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5</generator>
+
+<image>
+	<url>https://applyjobs.org.ng/wp-content/uploads/2024/03/cropped-logo-2-32x32.jpg</url>
+	<title>Oxford University &#8211; ApplyJobs</title>
+	<link>https://applyjobs.org.ng</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Oxford University Clarendon Scholarships 2024 &#124; UK</title>
+		<link>https://applyjobs.org.ng/oxford-university-clarendon-scholarship/</link>
+		
+		<dc:creator><![CDATA[Godwin A]]></dc:creator>
+		<pubDate>Sun, 03 Mar 2024 13:43:40 +0000</pubDate>
+				<category><![CDATA[Scholarship]]></category>
+		<category><![CDATA[Oxford University]]></category>
+		<guid isPermaLink="false">https://www.screeningdate.com/?p=8778</guid>
+
+					<description><![CDATA[<p>The Clarendon Scholarship of Oxford University is open to applicants from every country globally. The Oxford University application&#8230;</p>
+<p>The post <a rel="nofollow" href="https://applyjobs.org.ng/oxford-university-clarendon-scholarship/">Oxford University Clarendon Scholarships 2024 | UK</a> appeared first on <a rel="nofollow" href="https://applyjobs.org.ng">ApplyJobs</a>.</p>
+]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
