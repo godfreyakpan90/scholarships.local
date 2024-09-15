@@ -1,11 +1,95 @@
-<script type="text/javascript">
 
-var urls = new Array();
-urls[0] = "https://travels.cafegist.com.ng/apply";
-urls[1] = "https://insurance-jobs.cafegist.com.ng/apply";
-urls[2] = "https://travels.cafegist.com.ng/apply";
-var random = Math.floor(Math.random()*urls.length);
-
-window.location = urls[random];
-
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applyjobs.org.ng Travels</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .message h2 {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 30px 0;
+        }
+        .option {
+            text-decoration: none;
+            color: #f0f0f0;
+            font-size: 1.5em;
+            padding: 15px 30px;
+            border: 2px solid #f0f0f0;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .option:hover {
+            background-color: #f0f0f0;
+            color: #1e1e1e;
+        }
+        .option .icon {
+            margin-right: 15px;
+            font-size: 1.8em;
+        }
+        /* Specific Colors */
+        .study {
+            border-color: #4CAF50;
+        }
+        .live-work {
+            border-color: #2196F3;
+        }
+        .give-birth {
+            border-color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Applyjobs & Travels</h1>
+        <div class="message">
+            <h2>Select the right option for what you wish to travel for:</h2>
+            <ul>
+                <li>
+                    <a class="option study" href="https://dozgist.com.ng/date-and-deadlines-mcmaster-online-application-portal/">
+                        <span class="icon">🎓</span>To Study
+                    </a>
+                </li>
+                <li>
+                    <a class="option live-work" href="https://dozgist.com.ng/top-10-jobs-in-canada-offered-with-no-experience/">
+                        <span class="icon">💼</span>Live and Work
+                    </a>
+                </li>
+                <li>
+                    <a class="option give-birth" href="https://dozgist.com.ng/category/mba/">
+                        <span class="icon">👶</span>Get MBA Program
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
